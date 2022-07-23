@@ -1,3 +1,5 @@
+/* создание скрипта генерирующего рандомный пароль для сервиса <serviceName>
+с использованием логин/почта <serviceLoginEmail> и выбранного количества символов<quantitySymbol>*/
 public class Main {
     public static void main(String[] arg){
         RandomPassword rp =new RandomPassword("sfdsjdf", "sdfsdfsd", 8);

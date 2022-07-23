@@ -1,8 +1,17 @@
 /* создание скрипта генерирующего рандомный пароль для сервиса <serviceName>
 с использованием логин/почта <serviceLoginEmail> и выбранного количества символов<quantitySymbol>*/
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] arg){
-        RandomPassword rp =new RandomPassword("sfdsjdf", "sdfsdfsd", 8);
+        Scanner scr=new Scanner(System.in);
+        System.out.println("для какого сервиса создаем пароль?");
+        String sn= scr.nextLine();
+        System.out.println("логин/пароль");
+        String snl= scr.nextLine();
+
+        RandomPassword rp =new RandomPassword(sn, snl, 8);
         rp.setPassword();
 
     }
